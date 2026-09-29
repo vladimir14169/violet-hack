@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIOLET//HACK 2026 — приглашение</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- FLAG{view_source_is_a_superpower} -->
+
+  <nav class="nav">
+    <a href="#" class="logo">VIOLET<span>//</span>HACK</a>
+    <div class="nav-links">
+      <a href="#about">О хакатоне</a>
+      <a href="#schedule">Программа</a>
+      <a href="#team">Команда</a>
+      <a href="#tasks">Задания</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="glow"></div>
+    <p class="tag">&gt; Вы приглашены_</p>
+    <h1>VIOLET<span>//</span>HACK <em>2026</em></h1>
+    <p class="subtitle">24 часа кода, сетей и кибербезопасности.<br>Собери команду. Взломай задачу. Покажи результат.</p>
+
+    <div class="info">
+      <div class="info-card">
+        <span class="label">Место</span>
+        <span class="value">Украина, Киев</span>
+      </div>
+      <div class="info-card">
+        <span class="label">Дата</span>
+        <span class="value">5 ноября 2026</span>
+      </div>
+      <div class="info-card">
+        <span class="label">Начало</span>
+        <span class="value">12:00</span>
+      </div>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <div><span id="days">00</span><small>дней</small></div>
+      <div><span id="hours">00</span><small>часов</small></div>
+      <div><span id="minutes">00</span><small>минут</small></div>
+      <div><span id="seconds">00</span><small>секунд</small></div>
+    </div>
+
+    <a href="#tasks" class="btn">Принять вызов</a>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2><span>01.</span> О хакатоне</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>🛡️ Кибербезопасность</h3>
+          <p>Найди уязвимость, защити систему, построй инструмент для анализа угроз.</p>
+        </div>
+        <div class="card">
+          <h3>🌐 Сети и IoT</h3>
+          <p>Маршрутизация, мониторинг, умные устройства — всё, что общается по сети.</p>
+        </div>
+        <div class="card">
+          <h3>🤖 AI-инструменты</h3>
+          <p>Используй ИИ, чтобы решить реальную проблему быстрее и умнее.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div><strong>24</strong><span>часа</span></div>
+        <div><strong>3</strong><span>трека</span></div>
+        <div><strong>200</strong><span>участников</span></div>
+        <div><strong>2–5</strong><span>человек в команде</span></div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2><span>02.</span> Программа</h2>
+      <ol class="timeline">
+        <li><time>5 ноя · 12:00</time><p>Регистрация и открытие</p></li>
+        <li><time>5 ноя · 13:00</time><p>Объявление задач, старт хакатона</p></li>
+        <li><time>5 ноя · 19:00</time><p>Чекпоинт с менторами и ужин</p></li>
+        <li><time>6 ноя · 12:00</time><p>Код заморожен — стоп разработка</p></li>
+        <li><time>6 ноя · 13:00</time><p>Питчи команд перед жюри</p></li>
+        <li><time>6 ноя · 16:00</time><p>Награждение победителей</p></li>
+      </ol>
+    </section>
+
+    <section id="team">
+      <h2><span>03.</span> Команда организаторов</h2>
+      <div class="grid team">
+        <div class="person"><div class="avatar">АК</div><h3>Анна Коваль</h3><p>Главный организатор</p></div>
+        <div class="person"><div class="avatar">МТ</div><h3>Максим Ткаченко</h3><p>Технический директор</p></div>
+        <div class="person"><div class="avatar">ОШ</div><h3>Олена Шевчук</h3><p>Ментор по кибербезопасности</p></div>
+        <div class="person"><div class="avatar">ДБ</div><h3>Дмитрий Бондар</h3><p>Ментор по сетям</p></div>
+        <div class="person"><div class="avatar">ИМ</div><h3>Ирина Мельник</h3><p>Дизайн и UX</p></div>
+        <div class="person"><div class="avatar">АЛ</div><h3>Артём Лысенко</h3><p>Жюри, DevOps</p></div>
+      </div>
+    </section>
+
+    <section id="tasks">
+      <h2><span>04.</span> Разминка перед хакатоном</h2>
+      <p class="section-intro">Реши задания, чтобы проверить себя. Ответ вводи без пробелов по краям — регистр не важен.</p>
+      <p class="progress">Решено: <span id="solved">0</span> / <span id="total">0</span></p>
+
+      <div class="grid tasks">
+        <div class="task" data-answer="hi">
+          <span class="badge">Двоичный код</span>
+          <p>Переведи в текст:</p>
+          <code>01001000 01001001</code>
+          <form><input placeholder="Ответ..." autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+
+        <div class="task" data-answer="42">
+          <span class="badge">Hex</span>
+          <p>Сколько это в десятичной системе?</p>
+          <code>0x2A</code>
+          <form><input placeholder="Ответ..." autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+
+        <div class="task" data-answer="hacktheplanet">
+          <span class="badge">Base64</span>
+          <p>Раскодируй строку:</p>
+          <code>SGFja1RoZVBsYW5ldA==</code>
+          <form><input placeholder="Ответ..." autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+
+        <div class="task" data-answer="purple">
+          <span class="badge">Шифр Цезаря</span>
+          <p>Сдвиг на 3. Какое слово — пароль?</p>
+          <code>wkh sdvvzrug lv sxusoh</code>
+          <form><input placeholder="Ответ..." autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+
+        <div class="task" data-answer="14">
+          <span class="badge">Сети</span>
+          <p>Сколько адресов можно выдать хостам в подсети?</p>
+          <code>192.168.1.0/28</code>
+          <form><input placeholder="Ответ..." autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+
+        <div class="task" data-answer="flag{view_source_is_a_superpower}">
+          <span class="badge">Бонус</span>
+          <p>На этой странице спрятан флаг. Найди его.</p>
+          <code>FLAG{...}</code>
+          <form><input placeholder="FLAG{...}" autocomplete="off"><button>Проверить</button></form>
+          <p class="result"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>VIOLET//HACK 2026 · Украина, Киев · 5 ноября, 12:00</p>
+    <p class="muted">Хакатон вымышленный — это учебный проект.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
